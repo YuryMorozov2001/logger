@@ -49,7 +49,7 @@ class TalkerViewAppBar extends StatelessWidget {
       collapsedHeight: 60,
       toolbarHeight: 60,
       leading: leading,
-      iconTheme: const IconThemeData(color: Colors.white),
+      iconTheme: IconThemeData(color: talkerTheme.textColor),
       actions: [
         UnconstrainedBox(
           child: _MonitorButton(
@@ -72,7 +72,7 @@ class TalkerViewAppBar extends StatelessWidget {
         const SizedBox(width: 10),
       ],
       title: title != null
-          ? Text(title!, style: const TextStyle(color: Colors.white))
+          ? Text(title!, style: TextStyle(color: talkerTheme.textColor))
           : null,
       flexibleSpace: FlexibleSpaceBar(
         collapseMode: CollapseMode.parallax,
@@ -100,7 +100,7 @@ class TalkerViewAppBar extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               color: selected
                                   ? theme.primaryColor
-                                  : talkerTheme.cardColor,
+                                  : const Color(0xFF182F35),
                             ),
                             child: Row(
                               children: [

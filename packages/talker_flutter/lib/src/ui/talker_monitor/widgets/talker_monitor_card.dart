@@ -27,6 +27,7 @@ class TalkerMonitorCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: TalkerBaseCard(
+        backgroundColor: const Color(0xFFF6F8FB),
         color: color,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -52,7 +53,7 @@ class TalkerMonitorCard extends StatelessWidget {
                           Text(
                             subtitle!,
                             style: const TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 14,
                             ),
                           ),

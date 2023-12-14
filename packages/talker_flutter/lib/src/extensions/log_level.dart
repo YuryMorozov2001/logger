@@ -12,7 +12,7 @@ extension LogLevelExtensions on LogLevel? {
       case LogLevel.warning:
         return Colors.orange[800]!;
       case LogLevel.verbose:
-        return Colors.grey[400]!;
+        return Colors.grey;
       case LogLevel.info:
         return Colors.blue[400]!;
       case LogLevel.good:

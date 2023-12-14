@@ -14,6 +14,11 @@ final appRoutes = <String, WidgetBuilder>{
   Routes.product: (context) => const ProductScreen(),
   Routes.productsList: (context) => const ProductsScreen(),
   Routes.talker: (context) => TalkerScreen(
+        theme: const TalkerScreenTheme(
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
+          textColor: Colors.black,
+          cardColor: Color(0xFFF6F8FB),
+        ),
         talker: GetIt.instance<Talker>(),
       ),
 };
